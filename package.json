@@ -1,0 +1,23 @@
+{
+  "name": "feather-mmo",
+  "version": "1.0.0",
+  "description": "MMO backend framework built on RethinkDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omegablitz/rethink-mmo.git"
+  },
+  "author": "Aashish Welling",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omegablitz/rethink-mmo/issues"
+  },
+  "homepage": "https://github.com/omegablitz/rethink-mmo#readme",
+  "dependencies": {
+    "rethinkdb": "^2.3.3"
+  }
+}
