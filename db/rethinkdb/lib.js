@@ -1,6 +1,5 @@
 var r = require('rethinkdb');
 
-
 var p = r.connect({
 	host: 'localhost',
 	port: 28015
@@ -22,10 +21,19 @@ exports.seed = function() {
 
 exports.subscribe = function(callback) {
 	p.then(function(conn) {
-		rdb('mmo').table('tiles').changes().run(conn, function(err, cursor) {
+		r.db('mmo').table('tiles').changes().run(conn, function(err, cursor) {
 			if(!err) {
 				callback(cursor);
 			}
 		});
+	});
+};
+
+
+// DEFINE API CALLS HERE
+
+exports.update = function(update) {
+	p.then(function(conn) {
+		// r.db('mmo').table('tiles').
 	});
 };

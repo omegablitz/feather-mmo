@@ -7,3 +7,10 @@ if(process.argv[2] === 'seed') {
 exports.subscribe = function(callback) {
 	db.subscribe(callback);
 };
+
+
+// DEFINE API CALLS HERE
+
+exports.update = function(update) {
+	db.update(update);
+};

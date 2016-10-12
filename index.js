@@ -9,7 +9,7 @@ io.on('connection', function (socket) {
 		socket.emit('update', update);
 	});
 	socket.on('update', function (update) {
-		// TODO handle update
+		db.update(update);
 	});
 });
 
